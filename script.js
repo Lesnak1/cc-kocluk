@@ -25,20 +25,87 @@ function initializeNavigation() {
     const menuToggle = document.getElementById('menuToggle');
     const navMenu = document.getElementById('navMenu');
     const navLinks = document.querySelectorAll('.nav-link');
+    const header = document.querySelector('.header');
 
-    // Mobile menu toggle
+    // Mobile menu toggle with enhanced functionality
     if (menuToggle && navMenu) {
-        menuToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('active');
-            menuToggle.classList.toggle('active');
+        // Ensure mobile menu is properly initialized
+        navMenu.style.display = 'flex';
+        
+        menuToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
             
-            // Animate hamburger menu
+            const isActive = navMenu.classList.contains('active');
+            
+            if (isActive) {
+                // Close menu
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+                document.body.style.overflow = '';
+                document.documentElement.style.overflow = '';
+            } else {
+                // Open menu
+                navMenu.classList.add('active');
+                menuToggle.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                document.documentElement.style.overflow = 'hidden';
+            }
+            
+            // Enhanced hamburger animation
             const spans = menuToggle.querySelectorAll('span');
             spans.forEach((span, index) => {
-                span.style.transform = menuToggle.classList.contains('active') 
-                    ? getMenuAnimation(index) 
-                    : 'none';
+                if (menuToggle.classList.contains('active')) {
+                    switch(index) {
+                        case 0:
+                            span.style.transform = 'rotate(45deg) translate(6px, 6px)';
+                            break;
+                        case 1:
+                            span.style.opacity = '0';
+                            break;
+                        case 2:
+                            span.style.transform = 'rotate(-45deg) translate(6px, -6px)';
+                            break;
+                    }
+                } else {
+                    span.style.transform = 'none';
+                    span.style.opacity = '1';
+                }
             });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (navMenu.classList.contains('active') && 
+                !navMenu.contains(e.target) && 
+                !menuToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+                document.body.style.overflow = '';
+                document.documentElement.style.overflow = '';
+                
+                const spans = menuToggle.querySelectorAll('span');
+                spans.forEach(span => {
+                    span.style.transform = 'none';
+                    span.style.opacity = '1';
+                });
+            }
+        });
+        
+        // Close menu on window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768 && navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+                document.body.style.overflow = '';
+                document.documentElement.style.overflow = '';
+                
+                const spans = menuToggle.querySelectorAll('span');
+                spans.forEach(span => {
+                    span.style.transform = 'none';
+                    span.style.opacity = '1';
+                });
+            }
         });
     }
 
