@@ -50,3 +50,6 @@ coverage/
 # Cache
 .cache/
 .eslintcache
+
+# Claude configuration (local settings should not be shared)
+.claude/settings.local.json
