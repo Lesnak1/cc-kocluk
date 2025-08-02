@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - CC Koçluk</title>
+    <meta name="description" content="CC Koçluk ile iletişime geçin. Ücretsiz görüşme randevusu alın ve yaşam koçluğu hizmetleri hakkında bilgi edinin.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css?v=1.6">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="assets/logocc2.png" alt="CC Koçluk" class="logo">
+                    <span class="brand-text">CC Koçluk</span>
+                </div>
+                
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+                        <li class="dropdown">
+                            <a href="#hizmetler" class="nav-link">Hizmetler <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="yasam-koclugu.html">Yaşam Koçluğu</a>
+                                <a href="ogrenci-koclugu.html">Öğrenci Koçluğu</a>
+                                <a href="yonetici-koclugu.html">Yönetici Koçluğu</a>
+                                <a href="kariyer-koclugu.html">Kariyer Koçluğu</a>
+                                <a href="ilişki-koclugu.html">İlişki Koçluğu</a>
+                                <a href="ebeveyn-koclugu.html">Ebeveyn Koçluğu</a>
+                            </div>
+                        </li>
+                        <li><a href="hakkimda.html" class="nav-link">Hakkımda</a></li>
+                        <li><a href="egitimler.html" class="nav-link">Eğitimler</a></li>
+                        <li><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="iletisim.html" class="nav-link active">İletişim</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <a href="https://wa.me/905052959589" class="phone-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>0505 295 95 89</span>
+                    </a>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-title">İletişim</h1>
+                <p class="page-subtitle">Size en uygun şekilde ulaşın ve dönüşüm yolculuğunuza başlayın</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">Ana Sayfa</a>
+                    <span>/</span>
+                    <span>İletişim</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="page-content">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-form-section">
+                    <h2>Ücretsiz Görüşme Talep Edin</h2>
+                    <p>Size özel koçluk programınız hakkında konuşmak ve sorularınızı yanıtlamak için ücretsiz bir görüşme planlayalım.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Adınız *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Soyadınız *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-posta Adresiniz *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon Numaranız *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">İlgilendiğiniz Hizmet</label>
+                            <select id="service" name="service">
+                                <option value="">Seçiniz</option>
+                                <option value="yasam-koclugu">Yaşam Koçluğu</option>
+                                <option value="ogrenci-koclugu">Öğrenci Koçluğu</option>
+                                <option value="yonetici-koclugu">Yönetici Koçluğu</option>
+                                <option value="kariyer-koclugu">Kariyer Koçluğu</option>
+                                <option value="ilişki-koclugu">İlişki Koçluğu</option>
+                                <option value="ebeveyn-koclugu">Ebeveyn Koçluğu</option>
+                                <option value="egitim">Koçluk Eğitimi</option>
+                                <option value="diger">Diğer</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferredTime">Tercih Ettiğiniz Görüşme Zamanı</label>
+                            <select id="preferredTime" name="preferredTime">
+                                <option value="">Seçiniz</option>
+                                <option value="sabah">Sabah (09:00 - 12:00)</option>
+                                <option value="ogleden-sonra">Öğleden Sonra (13:00 - 17:00)</option>
+                                <option value="aksam">Akşam (18:00 - 20:00)</option>
+                                <option value="esnek">Esnek</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mesajınız (Opsiyonel)</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Hangi konularda destek almak istediğinizi kısaca belirtebilirsiniz..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="consent" name="consent" required>
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">Kişisel verilerimin işlenmesine ve iletişim kurulmasına onay veriyorum. <a href="#gizlilik">Gizlilik Politikası</a></span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i>
+                            Görüşme Talebini Gönder
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info-section">
+                    <div class="contact-card">
+                        <h3>İletişim Bilgileri</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Telefon</h4>
+                                <a href="tel:+905052959589">0505 295 95 89</a>
+                                <span class="contact-note">Pazartesi - Cuma: 09:00 - 18:00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>E-posta</h4>
+                                <a href="mailto:info@cckocluk.com">info@cckocluk.com</a>
+                                <span class="contact-note">24 saat içinde yanıt</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/905052959589">Hızlı Mesaj Gönder</a>
+                                <span class="contact-note">Anında yanıt</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Adres</h4>
+                                <a href="https://share.google/mQV7lOsSURy00Q4PG" target="_blank">Karabaş Mahallesi, Abdurrahman Yüksel caddesi No:16 Kat: 5, 41040 İzmit/Kocaeli</a>
+                                <span class="contact-note">Online ve yüz yüze seanslar</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="working-hours-card">
+                        <h3>Çalışma Saatleri</h3>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span class="day">Pazartesi - Cuma</span>
+                                <span class="time">09:00 - 18:00</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Cumartesi</span>
+                                <span class="time">10:00 - 16:00</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Pazar</span>
+                                <span class="time">Kapalı</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media-card">
+                        <h3>Sosyal Medya</h3>
+                        <p>Güncel içerikler ve motivasyon için takip edin:</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Sıkça Sorulan Sorular</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Koçluk seansları nasıl gerçekleşir?</h3>
+                    <p>Seanslar online (Zoom/Teams) veya yüz yüze gerçekleştirilebilir. Size en uygun yöntemi birlikte belirleriz.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Bir koçluk süreci ne kadar sürer?</h3>
+                    <p>Hedeflerinize bağlı olarak 3-12 ay arasında değişir. İlk görüşmede size özel bir program hazırlarız.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Koçluk ile terapi arasındaki fark nedir?</h3>
+                    <p>Koçluk geleceğe odaklıdır ve hedeflere ulaşmaya odaklanır. Terapi ise geçmişle ilgili sorunları ele alır.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>İlk görüşme gerçekten ücretsiz mi?</h3>
+                    <p>Evet, 30 dakikalık ilk görüşme tamamen ücretsizdir. Bu sürede birbirimizi tanır ve ihtiyaçlarınızı belirleriz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-brand">
+                            <img src="assets/logocc2.png" alt="CC Koçluk" class="footer-logo">
+                            <h3>CC Koçluk</h3>
+                        </div>
+                        <p class="footer-description">
+                            Profesyonel yaşam koçluğu ile potansiyelinizi keşfedin, 
+                            hedeflerinize ulaşın ve yaşamınızı dönüştürün.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">Hizmetler</h4>
+                        <ul class="footer-links">
+                            <li><a href="yasam-koclugu.html">Yaşam Koçluğu</a></li>
+                            <li><a href="ogrenci-koclugu.html">Öğrenci Koçluğu</a></li>
+                            <li><a href="yonetici-koclugu.html">Yönetici Koçluğu</a></li>
+                            <li><a href="kariyer-koclugu.html">Kariyer Koçluğu</a></li>
+                            <li><a href="ilişki-koclugu.html">İlişki Koçluğu</a></li>
+                            <li><a href="ebeveyn-koclugu.html">Ebeveyn Koçluğu</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">Kaynaklar</h4>
+                        <ul class="footer-links">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="egitimler.html">Eğitimler</a></li>
+                            <li><a href="hakkimda.html">Hakkımızda</a></li>
+                            <li><a href="iletisim.html">İletişim</a></li>
+                            <li><a href="#gizlilik">Gizlilik Politikası</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">İletişim</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <span>Telefon</span>
+                                    <a href="tel:+905052959589">0505 295 95 89</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <span>E-posta</span>
+                                    <a href="mailto:info@cckocluk.com">info@cckocluk.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 CC Koçluk. Tüm hakları saklıdır.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#gizlilik">Gizlilik Politikası</a>
+                        <a href="#kullanim">Kullanım Şartları</a>
+                        <a href="#cerez">Çerez Politikası</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/905052959589" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    
+    <script>
+        // Contact form handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Show success message
+            alert('Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.');
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>

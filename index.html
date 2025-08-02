@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CC Koçluk - Profesyonel Yaşam Koçluğu ve Kişisel Gelişim</title>
+    <meta name="description" content="Cuma Ceylan ile profesyonel yaşam koçluğu, kişisel gelişim ve dönüşüm hizmetleri. Hayallerinizi gerçeğe dönüştürün.">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css?v=1.7">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="assets/logocc2.png" alt="CC Koçluk" class="logo">
+                    <span class="brand-text">CC Koçluk</span>
+                </div>
+                
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link active">Ana Sayfa</a></li>
+                        <li class="dropdown">
+                            <a href="#hizmetler" class="nav-link">Hizmetler <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="yasam-koclugu.html">Yaşam Koçluğu</a>
+                                <a href="ogrenci-koclugu.html">Öğrenci Koçluğu</a>
+                                <a href="yonetici-koclugu.html">Yönetici Koçluğu</a>
+                                <a href="kariyer-koclugu.html">Kariyer Koçluğu</a>
+                                <a href="ilişki-koclugu.html">İlişki Koçluğu</a>
+                                <a href="ebeveyn-koclugu.html">Ebeveyn Koçluğu</a>
+                            </div>
+                        </li>
+                        <li><a href="hakkimda.html" class="nav-link">Hakkımda</a></li>
+                        <li><a href="egitimler.html" class="nav-link">Eğitimler</a></li>
+                        <li><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <a href="https://wa.me/905052959589" class="phone-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>0505 295 95 89</span>
+                    </a>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="anasayfa">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="highlight">Hayallerinizi</span><br>
+                        <span class="title-white">Gerçeğe Dönüştürün</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Profesyonel yaşam koçluğu ile potansiyelinizi keşfedin, 
+                        hedeflerinize ulaşın ve yaşamınızı dönüştürün.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="3247">3.247</span>
+                            <span class="stat-label">Başarılı Danışan</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="15">15+</span>
+                            <span class="stat-label">Yıl Deneyim</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="97">%97</span>
+                            <span class="stat-label">Memnuniyet</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#iletisim" class="btn btn-primary">
+                            <i class="fas fa-calendar-check"></i>
+                            Ücretsiz Görüşme
+                        </a>
+                        <a href="#hizmetler" class="btn btn-secondary">
+                            <i class="fas fa-play"></i>
+                            Hizmetleri İncele
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/cuma-ceylan.png" alt="Cuma Ceylan - Profesyonel Yaşam Koçu">
+                    <div class="floating-card">
+                        <div class="card-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Certified Coach</span>
+                            <span class="card-subtitle">ICF Akrediteli</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="hizmetler">
+        <div id="services-anchor"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Hizmetlerimiz</span>
+                <h2 class="section-title">Size Özel Koçluk Çözümleri</h2>
+                <p class="section-description">
+                    Her bireyin benzersiz ihtiyaçlarına yönelik profesyonel koçluk hizmetleri sunuyoruz.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="service-title">Yaşam Koçluğu</h3>
+                    <p class="service-description">
+                        Kişisel ve mesleki yaşamınızda denge kurarak, hedeflerinize ulaşmanız için rehberlik ediyoruz.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Kişisel Gelişim Planı</li>
+                        <li><i class="fas fa-check"></i> Hedef Belirleme</li>
+                        <li><i class="fas fa-check"></i> Motivasyon Yönetimi</li>
+                    </ul>
+                    <a href="#iletisim" class="service-btn">Detaylı Bilgi</a>
+                </div>
+                
+                <div class="service-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="featured-badge">Popüler</div>
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="service-title">Öğrenci Koçluğu</h3>
+                    <p class="service-description">
+                        Öğrencilerin akademik başarılarını artırırken, gelecek planlaması konusunda destek sağlıyoruz.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Sınav Stratejileri</li>
+                        <li><i class="fas fa-check"></i> Zaman Yönetimi</li>
+                        <li><i class="fas fa-check"></i> Kariyer Planlama</li>
+                    </ul>
+                    <a href="#iletisim" class="service-btn">Detaylı Bilgi</a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title">Yönetici Koçluğu</h3>
+                    <p class="service-description">
+                        Liderlik becerilerinizi geliştirerek, ekibinizi ve şirketinizi başarıya taşıyın.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Liderlik Geliştirme</li>
+                        <li><i class="fas fa-check"></i> Ekip Yönetimi</li>
+                        <li><i class="fas fa-check"></i> Stratejik Düşünce</li>
+                    </ul>
+                    <a href="#iletisim" class="service-btn">Detaylı Bilgi</a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="service-title">Grup Koçluğu</h3>
+                    <p class="service-description">
+                        Takım halinde çalışmanın gücünü keşfederek, ortak hedeflere birlikte ulaşın.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Takım Dinamikleri</li>
+                        <li><i class="fas fa-check"></i> İletişim Becerileri</li>
+                        <li><i class="fas fa-check"></i> Ortak Hedefler</li>
+                    </ul>
+                    <a href="#iletisim" class="service-btn">Detaylı Bilgi</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="hakkimda">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="assets/cuma-ceylan.png" alt="Cuma Ceylan">
+                    <div class="experience-badge">
+                        <span class="badge-number">15+</span>
+                        <span class="badge-text">Yıl Deneyim</span>
+                    </div>
+                </div>
+                
+                <div class="about-text" data-aos="fade-left">
+                    <span class="section-tag">Hakkımda</span>
+                    <h2 class="section-title">Cuma Ceylan</h2>
+                    <h3 class="about-subtitle">Profesyonel Yaşam Koçu & Kişisel Gelişim Uzmanı</h3>
+                    
+                    <p class="about-description">
+                        15 yılı aşkın deneyimimle, bireylerin ve organizasyonların potansiyellerini 
+                        keşfetmelerine yardımcı oluyorum. ICF (International Coach Federation) 
+                        akreditasyonuna sahip olarak, kanıtlanmış metodlarla başarı hikayelerinin 
+                        yazılmasına öncülük ediyorum.
+                    </p>
+                    
+                    <div class="credentials">
+                        <div class="credential">
+                            <i class="fas fa-certificate"></i>
+                            <span>ICF Akrediteli Koç</span>
+                        </div>
+                        <div class="credential">
+                            <i class="fas fa-award"></i>
+                            <span>NLP Practitioner</span>
+                        </div>
+                        <div class="credential">
+                            <i class="fas fa-brain"></i>
+                            <span>Kişisel Gelişim Uzmanı</span>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <span class="stat-number" data-count="3247">3.247</span>
+                            <span class="stat-label">Başarılı Danışan</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="stat-number" data-count="9847">9.847+</span>
+                            <span class="stat-label">Koçluk Saati</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="stat-number" data-count="234">234</span>
+                            <span class="stat-label">Kurumsal Proje</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="stat-number" data-count="15">15+</span>
+                            <span class="stat-label">Yıl Deneyim</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="stat-number" data-count="97">%97</span>
+                            <span class="stat-label">Memnuniyet</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#iletisim" class="btn btn-primary">
+                        <i class="fas fa-comments"></i>
+                        Benimle İletişime Geç
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Süreç</span>
+                <h2 class="section-title">Dönüşüm Yolculuğunuz</h2>
+                <p class="section-description">
+                    Hedefinize ulaşmanız için tasarlanmış sistematik ve etkili bir süreç.
+                </p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Keşif & Değerlendirme</h3>
+                        <p class="step-description">
+                            Mevcut durumunuzu analiz ederek, hedeflerinizi ve potansiyelinizi keşfediyoruz.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Plan & Strateji</h3>
+                        <p class="step-description">
+                            Size özel bir eylem planı oluşturarak, hedefinize giden yol haritasını çiziyoruz.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Uygulama & Takip</h3>
+                        <p class="step-description">
+                            Düzenli seanslarla ilerlemenizi takip ederek, gerekli ayarlamaları yapıyoruz.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Dönüşüm & Başarı</h3>
+                        <p class="step-description">
+                            Hedeflerinize ulaşırken, kalıcı değişimler elde etmenizi sağlıyoruz.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Referanslar</span>
+                <h2 class="section-title">Müşteri Deneyimleri</h2>
+                <p class="section-description">
+                    Koçluk sürecimizden geçen müşterilerimizin gerçek deneyimleri.
+                </p>
+            </div>
+            
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Cuma Bey ile çalışmaya başladığımda kendimi kaybolmuş hissediyordum. 
+                            Şimdi hayallerimi gerçekleştirme yolunda emin adımlarla ilerliyorum. 
+                            Bu dönüşüm için çok teşekkür ederim."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="avatar-placeholder">AD</div>
+                            <div class="author-info">
+                                <span class="author-name">Ayşe Demir</span>
+                                <span class="author-title">Pazarlama Müdürü</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Üniversite sınavına hazırlanırken stres ve motivasyon sorunları yaşıyordum. 
+                            Öğrenci koçluğu sayesinde hem başarılı oldum hem de özgüvenimi kazandım."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="avatar-placeholder">MY</div>
+                            <div class="author-info">
+                                <span class="author-name">Mehmet Yılmaz</span>
+                                <span class="author-title">Üniversite Öğrencisi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Ekip yönetiminde yaşadığım zorluklar için aldığım yönetici koçluğu, 
+                            hem profesyonel hem de kişisel gelişimime büyük katkı sağladı."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="avatar-placeholder">ZK</div>
+                            <div class="author-info">
+                                <span class="author-name">Zeynep Kaya</span>
+                                <span class="author-title">İnsan Kaynakları Direktörü</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Yaşam koçluğu seansları sayesinde kendimi daha iyi tanıdım ve 
+                            hayatta ne istediğimi keşfettim. Artık daha bilinçli kararlar alıyorum."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="avatar-placeholder">EG</div>
+                            <div class="author-info">
+                                <span class="author-name">Emre Güven</span>
+                                <span class="author-title">Yazılım Geliştirici</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "İlişki koçluğu alan eşimle birlikte yeni bir sayfa açtık. 
+                            İletişimimiz güçlendi ve ilişkimizde muazzam gelişmeler yaşadık."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="avatar-placeholder">SA</div>
+                            <div class="author-info">
+                                <span class="author-name">Selin Arslan</span>
+                                <span class="author-title">Öğretmen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials-controls">
+                <button class="testimonial-btn prev" id="prevTestimonial">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="testimonials-dots" id="testimonialsDots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                    <span class="dot" data-slide="4"></span>
+                </div>
+                <button class="testimonial-btn next" id="nextTestimonial">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Dönüşüm Yolculuğunuza Başlayın</h2>
+                <p class="cta-description">
+                    Ücretsiz görüşme ile potansiyelinizi keşfedin ve hayallerinizi gerçeğe dönüştürün.
+                </p>
+                <div class="cta-actions">
+                    <a href="#iletisim" class="btn btn-primary btn-large">
+                        <i class="fas fa-calendar-check"></i>
+                        Ücretsiz Görüşme Rezervasyonu
+                    </a>
+                    <div class="cta-contact">
+                        <span>Hemen ara:</span>
+                        <a href="tel:+905052959589" class="phone-number">0505 295 95 89</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="iletisim">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-brand">
+                            <img src="assets/logocc2.png" alt="CC Koçluk" class="footer-logo">
+                            <h3>CC Koçluk</h3>
+                        </div>
+                        <p class="footer-description">
+                            Profesyonel yaşam koçluğu ile potansiyelinizi keşfedin, 
+                            hedeflerinize ulaşın ve yaşamınızı dönüştürün.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">Hizmetler</h4>
+                        <ul class="footer-links">
+                            <li><a href="yasam-koclugu.html">Yaşam Koçluğu</a></li>
+                            <li><a href="ogrenci-koclugu.html">Öğrenci Koçluğu</a></li>
+                            <li><a href="yonetici-koclugu.html">Yönetici Koçluğu</a></li>
+                            <li><a href="kariyer-koclugu.html">Kariyer Koçluğu</a></li>
+                            <li><a href="ilişki-koclugu.html">İlişki Koçluğu</a></li>
+                            <li><a href="ebeveyn-koclugu.html">Ebeveyn Koçluğu</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">Kaynaklar</h4>
+                        <ul class="footer-links">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="egitimler.html">Eğitimler</a></li>
+                            <li><a href="hakkimda.html">Hakkımızda</a></li>
+                            <li><a href="iletisim.html">İletişim</a></li>
+                            <li><a href="#gizlilik">Gizlilik Politikası</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">İletişim</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <span>Telefon</span>
+                                    <a href="tel:+905052959589">0505 295 95 89</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <span>E-posta</span>
+                                    <a href="mailto:info@cckocluk.com">info@cckocluk.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <span>Adres</span>
+                                    <a href="https://share.google/mQV7lOsSURy00Q4PG" target="_blank" class="address-link">
+                                        <span>Karabaş Mahallesi, Abdurrahman Yüksel caddesi No:16 Kat: 5, 41040 İzmit/Kocaeli</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="newsletter">
+                            <h5>Bülten Aboneliği</h5>
+                            <form class="newsletter-form">
+                                <input type="email" placeholder="E-posta adresiniz" required>
+                                <button type="submit">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 CC Koçluk. Tüm hakları saklıdır.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#gizlilik">Gizlilik Politikası</a>
+                        <a href="#kullanim">Kullanım Şartları</a>
+                        <a href="#cerez">Çerez Politikası</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/905052959589" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js?v=1.5"></script>
+</body>
+</html>

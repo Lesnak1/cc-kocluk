@@ -1,0 +1,20 @@
+CC Koçluk Website - Gerekli Görseller
+
+Mevcut:
+✅ logocc2.png - Logo
+✅ cuma-ceylan.png - Ana fotoğraf
+
+Gerekli Görseller (Placeholder olarak CSS'de renk gradient kullanılıyor):
+
+1. Hero Background (hero-bg.jpg):
+   - 1920x1080px
+   - Modern office/workspace
+   - Professional atmosphere
+
+2. Testimonial Photos:
+   - testimonial-1.jpg (100x100px) - Ayşe Demir
+   - testimonial-2.jpg (100x100px) - Mehmet Yılmaz  
+   - testimonial-3.jpg (100x100px) - Zeynep Kaya
+
+Not: Şu anda website placeholder gradient'lerle çalışacak şekilde tasarlandı.
+Görseller eklendiğinde otomatik olarak görünecektir.

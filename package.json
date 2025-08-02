@@ -1,0 +1,29 @@
+{
+  "name": "cc-kocluk-website",
+  "version": "1.0.0",
+  "description": "CC Koçluk - Profesyonel Yaşam Koçluğu Websitesi",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Build completed'",
+    "start": "npx serve .",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "coaching",
+    "life-coaching",
+    "personal-development",
+    "yaşam-koçluğu",
+    "kişisel-gelişim"
+  ],
+  "author": "CC Koçluk",
+  "license": "MIT",
+  "homepage": "https://cckocluk.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cckocluk/website.git"
+  },
+  "devDependencies": {
+    "serve": "^14.0.0"
+  }
+}

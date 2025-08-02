@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - CC Koçluk</title>
+    <meta name="description" content="Koçluk, kişisel gelişim ve yaşam dengesine dair güncel makaleler ve uzman görüşleri.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css?v=1.6">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="assets/logocc2.png" alt="CC Koçluk" class="logo">
+                    <span class="brand-text">CC Koçluk</span>
+                </div>
+                
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+                        <li class="dropdown">
+                            <a href="#hizmetler" class="nav-link">Hizmetler <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="yasam-koclugu.html">Yaşam Koçluğu</a>
+                                <a href="ogrenci-koclugu.html">Öğrenci Koçluğu</a>
+                                <a href="yonetici-koclugu.html">Yönetici Koçluğu</a>
+                                <a href="kariyer-koclugu.html">Kariyer Koçluğu</a>
+                                <a href="ilişki-koclugu.html">İlişki Koçluğu</a>
+                                <a href="ebeveyn-koclugu.html">Ebeveyn Koçluğu</a>
+                            </div>
+                        </li>
+                        <li><a href="hakkimda.html" class="nav-link">Hakkımda</a></li>
+                        <li><a href="egitimler.html" class="nav-link">Eğitimler</a></li>
+                        <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                        <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <a href="https://wa.me/905052959589" class="phone-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>0505 295 95 89</span>
+                    </a>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-title">Blog</h1>
+                <p class="page-subtitle">Koçluk, kişisel gelişim ve yaşam dengesine dair güncel yazılar</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">Ana Sayfa</a>
+                    <span>/</span>
+                    <span>Blog</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="page-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="main-content">
+                    <div class="blog-intro">
+                        <h2>Koçluk Dünyasından Haberler</h2>
+                        <p>Kişisel gelişim, yaşam koçluğu, aile ilişkileri ve kariyer planlama konularında uzman görüşleri ve pratik öneriler.</p>
+                    </div>
+
+                    <!-- Featured Articles -->
+                    <div class="featured-articles">
+                        <h3>Öne Çıkan Yazılar</h3>
+                        
+                        <article class="blog-card featured">
+                            <div class="blog-image">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span class="blog-category">Yaşam Koçluğu</span>
+                                    <span class="blog-date">15 Mart 2024</span>
+                                </div>
+                                <h4><a href="#">Yaşam Dengesini Kurmanın 7 Altın Kuralı</a></h4>
+                                <p>Modern yaşamın karmaşası içinde kaybolmak kolay, ancak doğru stratejilerle yaşam dengenizi kurabilir ve sürdürebilirsiniz. İş, aile, sağlık ve kişisel gelişim alanlarında denge kurmanın temel prensiplerini keşfedin.</p>
+                                <a href="#" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+
+                        <article class="blog-card featured">
+                            <div class="blog-image">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span class="blog-category">Öğrenci Koçluğu</span>
+                                    <span class="blog-date">8 Mart 2024</span>
+                                </div>
+                                <h4><a href="#">Sınav Kaygısıyla Başa Çıkmanın Etkili Yolları</a></h4>
+                                <p>Sınav dönemlerinde yaşanan kaygı ve stres, öğrenci performansını olumsuz etkileyebilir. Zihinsel ve fiziksel teknikleri harmanlayarak sınav kaygısını kontrol altına alın ve başarıya odaklanın.</p>
+                                <a href="#" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Blog Articles Grid -->
+                    <div class="blog-articles">
+                        <h3>Son Yazılar</h3>
+                        
+                        <div class="blog-grid">
+                            <article class="blog-card">
+                                <div class="blog-image">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span class="blog-category">İlişki Koçluğu</span>
+                                        <span class="blog-date">1 Mart 2024</span>
+                                    </div>
+                                    <h4><a href="#">Sağlıklı İletişimin Temelleri</a></h4>
+                                    <p>İlişkilerde sağlıklı iletişim kurmanın temel prensipleri ve günlük yaşamda uygulayabileceğiniz pratik öneriler.</p>
+                                    <a href="#" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+
+                            <article class="blog-card">
+                                <div class="blog-image">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span class="blog-category">Kariyer Koçluğu</span>
+                                        <span class="blog-date">22 Şubat 2024</span>
+                                    </div>
+                                    <h4><a href="#">Kariyer Değişikliğinde Dikkat Edilmesi Gerekenler</a></h4>
+                                    <p>Yeni bir kariyer yoluna adım atarken göz önünde bulundurmanız gereken faktörler ve başarılı geçiş stratejileri.</p>
+                                    <a href="#" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+
+                            <article class="blog-card">
+                                <div class="blog-image">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span class="blog-category">Ebeveyn Koçluğu</span>
+                                        <span class="blog-date">15 Şubat 2024</span>
+                                    </div>
+                                    <h4><a href="#">Ergen Çocuklarla İletişim Sanatı</a></h4>
+                                    <p>Ergenlik dönemindeki çocuklarla etkili iletişim kurmanın yolları ve aile uyumunu güçlendiren yaklaşımlar.</p>
+                                    <a href="#" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+
+                            <article class="blog-card">
+                                <div class="blog-image">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span class="blog-category">Kişisel Gelişim</span>
+                                        <span class="blog-date">8 Şubat 2024</span>
+                                    </div>
+                                    <h4><a href="#">Öz Farkındalık Geliştirmenin Püf Noktaları</a></h4>
+                                    <p>Kendinizi daha iyi tanımanın ve öz farkındalığınızı geliştirmenin pratik yöntemleri ve günlük egzersizleri.</p>
+                                    <a href="#" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+
+                            <article class="blog-card">
+                                <div class="blog-image">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span class="blog-category">Yönetici Koçluğu</span>
+                                        <span class="blog-date">1 Şubat 2024</span>
+                                    </div>
+                                    <h4><a href="#">Liderlik Becerilerini Geliştirmenin 5 Adımı</a></h4>
+                                    <p>Etkili liderlik için gerekli becerileri geliştirme süreçleri ve takım yönetiminde başarı faktörleri.</p>
+                                    <a href="#" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+
+                            <article class="blog-card">
+                                <div class="blog-image">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span class="blog-category">Verimlilik</span>
+                                        <span class="blog-date">25 Ocak 2024</span>
+                                    </div>
+                                    <h4><a href="#">Zaman Yönetiminde Etkili Teknikler</a></h4>
+                                    <p>Zamanınızı daha verimli kullanmanın modern yöntemleri ve günlük rutinlerinizi optimize etme stratejileri.</p>
+                                    <a href="#" class="read-more">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Koçluk Hakkında -->
+                    <div class="coaching-info">
+                        <h3>Koçluk Hakkında Bilmeniz Gerekenler</h3>
+                        
+                        <div class="info-section">
+                            <h4>Koçluğun Tarihçesi</h4>
+                            <p>İsmini spordan alan Koçluk mesleğinin kökeni de spora dayanır. 1974'de yayımlanan Timothy Gallway'in "The Inner Game of Tennis" adlı kitabı kişisel performansa dair yeni bir yaklaşım oluşturmuş ve bu yeni yaklaşım; performansın odağını sporcunun fiziksel aksiyonlarından zihinsel yapısına kaydırmıştır.</p>
+                            
+                            <p>Fransızca kökenli eski bir kelime olan "Coach" kelimesi; "insanları bir yerden bir yere taşıyan araç" anlamındadır. Günümüz anlamında ilk kez Dr. Dick Borough, 1985 yılında kendi liderlik tarzını tanımlamak için Koç terimini kullanmıştır.</p>
+                        </div>
+
+                        <div class="info-section">
+                            <h4>Koçluk Nedir? Ne Değildir?</h4>
+                            <p>ICF tarafından koçluk, günümüzün belirsiz ve karmaşık ortamlarında özellikle önemli olan, kişisel ve mesleki potansiyeli en üst düzeye çıkarmak için ilham veren, düşünmeye teşvik eden ve yaratıcı bir süreçte müşteri ile ortaklık ilişkisi olarak tanımlanmaktadır.</p>
+                            
+                            <p>Koçluk eğitmenlik, terapi, mentorlük, danışmanlık değildir. Koçlukta akıl verme, yönlendirme, tavsiye olmaz. Güçlü sorular sorarak, aktif dinleyerek kişinin farkındalığını kendi oluşturması amaçlanır.</p>
+                        </div>
+
+                        <div class="info-section">
+                            <h4>Koçluk Varsayımları</h4>
+                            <ul class="assumptions-list">
+                                <li>Anlamak istiyorsanız eyleme geçin</li>
+                                <li>Başarısızlık diye bir şey yoktur, sadece geri bildirim var</li>
+                                <li>Çaresiz insan yoktur, çare üretemeyen zihin var</li>
+                                <li>Tüm davranışların bir nedeni var</li>
+                                <li>İhtiyacımız olan kaynaklara sahibiz. Danışan tam ve mükemmeldir</li>
+                                <li>Kendi gerçeğimizi kendimiz yaratırız</li>
+                                <li>Cevaplar danışandadır, sorular koçtadır</li>
+                                <li>Yapabileceğinin en iyisini yapıyorsun ve daha iyisini de yapman mümkündür</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <div class="newsletter-section">
+                        <h3>Blog Güncellemelerini Kaçırmayın</h3>
+                        <p>Koçluk, kişisel gelişim ve yaşam dengesine dair en güncel yazılarımızı e-posta ile alın.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="E-posta adresiniz" required>
+                            <button type="submit" class="btn btn-primary">Abone Ol</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Kategoriler</h3>
+                        <ul class="category-links">
+                            <li><a href="#"><i class="fas fa-heart"></i> Yaşam Koçluğu <span>(12)</span></a></li>
+                            <li><a href="#"><i class="fas fa-graduation-cap"></i> Öğrenci Koçluğu <span>(8)</span></a></li>
+                            <li><a href="#"><i class="fas fa-briefcase"></i> Kariyer Koçluğu <span>(10)</span></a></li>
+                            <li><a href="#"><i class="fas fa-hands-helping"></i> İlişki Koçluğu <span>(6)</span></a></li>
+                            <li><a href="#"><i class="fas fa-users"></i> Ebeveyn Koçluğu <span>(9)</span></a></li>
+                            <li><a href="#"><i class="fas fa-user-tie"></i> Yönetici Koçluğu <span>(7)</span></a></li>
+                            <li><a href="#"><i class="fas fa-lightbulb"></i> Kişisel Gelişim <span>(15)</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>Popüler Yazılar</h3>
+                        <div class="popular-posts">
+                            <article class="mini-post">
+                                <h4><a href="#">Yaşam Dengesini Kurmanın 7 Altın Kuralı</a></h4>
+                                <div class="mini-meta">
+                                    <span class="mini-date">15 Mart 2024</span>
+                                    <span class="mini-views">1,245 görüntüleme</span>
+                                </div>
+                            </article>
+                            <article class="mini-post">
+                                <h4><a href="#">Sınav Kaygısıyla Başa Çıkmanın Etkili Yolları</a></h4>
+                                <div class="mini-meta">
+                                    <span class="mini-date">8 Mart 2024</span>
+                                    <span class="mini-views">892 görüntüleme</span>
+                                </div>
+                            </article>
+                            <article class="mini-post">
+                                <h4><a href="#">Kariyer Değişikliğinde Dikkat Edilmesi Gerekenler</a></h4>
+                                <div class="mini-meta">
+                                    <span class="mini-date">22 Şubat 2024</span>
+                                    <span class="mini-views">756 görüntüleme</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>Etiketler</h3>
+                        <div class="tag-cloud">
+                            <a href="#" class="tag">koçluk</a>
+                            <a href="#" class="tag">kişisel gelişim</a>
+                            <a href="#" class="tag">yaşam dengesi</a>
+                            <a href="#" class="tag">motivasyon</a>
+                            <a href="#" class="tag">hedef belirleme</a>
+                            <a href="#" class="tag">iletişim</a>
+                            <a href="#" class="tag">liderlik</a>
+                            <a href="#" class="tag">zaman yönetimi</a>
+                            <a href="#" class="tag">aile</a>
+                            <a href="#" class="tag">kariyer</a>
+                            <a href="#" class="tag">eğitim</a>
+                            <a href="#" class="tag">başarı</a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>Koçluk Hizmeti Alın</h3>
+                        <p>Kişisel gelişiminizi hızlandırmak ve hedeflerinize ulaşmak için profesyonel koçluk hizmetimizden yararlanın.</p>
+                        <a href="iletisim.html" class="btn btn-primary">Ücretsiz Görüşme</a>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>İletişim</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+905052959589">0505 295 95 89</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:info@cckocluk.com">info@cckocluk.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Kişisel Gelişim Yolculuğunuza Başlayın</h2>
+                <p class="cta-description">
+                    Blog yazılarımızdan ilham alın ve profesyonel koçluk desteği ile hedeflerinize ulaşın.
+                </p>
+                <div class="cta-actions">
+                    <a href="iletisim.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-rocket"></i>
+                        Koçluk Yolculuğuna Başla
+                    </a>
+                    <div class="cta-contact">
+                        <span>Hemen ara:</span>
+                        <a href="tel:+905052959589" class="phone-number">0505 295 95 89</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-brand">
+                            <img src="assets/logocc2.png" alt="CC Koçluk" class="footer-logo">
+                            <h3>CC Koçluk</h3>
+                        </div>
+                        <p class="footer-description">
+                            Profesyonel yaşam koçluğu ile potansiyelinizi keşfedin, 
+                            hedeflerinize ulaşın ve yaşamınızı dönüştürün.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">Hizmetler</h4>
+                        <ul class="footer-links">
+                            <li><a href="yasam-koclugu.html">Yaşam Koçluğu</a></li>
+                            <li><a href="ogrenci-koclugu.html">Öğrenci Koçluğu</a></li>
+                            <li><a href="yonetici-koclugu.html">Yönetici Koçluğu</a></li>
+                            <li><a href="kariyer-koclugu.html">Kariyer Koçluğu</a></li>
+                            <li><a href="ilişki-koclugu.html">İlişki Koçluğu</a></li>
+                            <li><a href="ebeveyn-koclugu.html">Ebeveyn Koçluğu</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">Kaynaklar</h4>
+                        <ul class="footer-links">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="egitimler.html">Eğitimler</a></li>
+                            <li><a href="hakkimda.html">Hakkımızda</a></li>
+                            <li><a href="iletisim.html">İletişim</a></li>
+                            <li><a href="#gizlilik">Gizlilik Politikası</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title">İletişim</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <span>Telefon</span>
+                                    <a href="tel:+905052959589">0505 295 95 89</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <span>E-posta</span>
+                                    <a href="mailto:info@cckocluk.com">info@cckocluk.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <span>Adres</span>
+                                    <a href="https://share.google/mQV7lOsSURy00Q4PG" target="_blank" class="address-link">
+                                        <span>Karabaş Mahallesi, Abdurrahman Yüksel caddesi No:16 Kat: 5, 41040 İzmit/Kocaeli</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 CC Koçluk. Tüm hakları saklıdır.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#gizlilik">Gizlilik Politikası</a>
+                        <a href="#kullanim">Kullanım Şartları</a>
+                        <a href="#cerez">Çerez Politikası</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/905052959589" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
