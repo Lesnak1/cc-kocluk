@@ -600,7 +600,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
@@ -1387,6 +1387,11 @@ h1, h2, h3, h4, h5, h6 {
         gap: 30px;
         text-align: center;
         margin-top: 10px;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
     
     .about-content {
