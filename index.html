@@ -79,7 +79,54 @@
         }
         
         .nav-menu {
-            display: flex;
+            display: flex !important;
+        }
+        
+        /* Desktop navigation - always visible */
+        @media (min-width: 769px) {
+            .nav-menu {
+                position: static !important;
+                display: flex !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+                transform: none !important;
+                background: transparent !important;
+                box-shadow: none !important;
+                padding: 0 !important;
+                height: auto !important;
+                width: auto !important;
+                top: auto !important;
+                left: auto !important;
+                transition: none !important;
+            }
+            
+            .nav-list {
+                display: flex !important;
+                flex-direction: row !important;
+                gap: 30px !important;
+                list-style: none !important;
+                align-items: center !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+            
+            .nav-link {
+                display: inline-block !important;
+                padding: 8px 0 !important;
+                margin: 0 !important;
+                font-size: 16px !important;
+                border-radius: 0 !important;
+                background: transparent !important;
+                transform: none !important;
+            }
+            
+            .menu-toggle {
+                display: none !important;
+            }
+            
+            .nav-actions {
+                display: flex !important;
+            }
         }
         
         .nav-list {
@@ -565,8 +612,8 @@
     </style>
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css?v=2.0" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="styles.css?v=2.0"></noscript>
+    <link rel="stylesheet" href="styles.css?v=2.1" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="styles.css?v=2.1"></noscript>
 </head>
 <body>
     <!-- Header -->
@@ -1163,6 +1210,6 @@
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="script.js?v=2.0"></script>
+    <script src="script.js?v=2.1"></script>
 </body>
 </html>
